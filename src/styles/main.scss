@@ -1,0 +1,84 @@
+$brown: #966b43;
+$beige: #f2eee8;
+$dark-beige: #e0c8b6;
+$light-orange: #f0b85f;
+$dark-gray: #282828;
+
+
+body{
+    background-color: $beige;
+    font-family: 'Roboto', sans-serif!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1{
+    color: $brown;
+}
+
+h2{
+    color: $light-orange;
+}
+
+h3{
+    color: $dark-beige;
+}
+
+h4{
+    color: $dark-gray;
+}
+
+.bg-beige{
+    background-color: $beige;
+}
+
+.carousel{
+    position: relative;
+    img{
+        height: 900px;
+        object-fit: cover;
+    }
+    svg{
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
+    }
+}
+
+.icons{
+    background-color: $beige;
+    h3{
+        color: $brown;
+    }
+    p{
+        color: $brown;
+    }
+}
+
+.bar-img img{
+    height: 260px;
+    object-fit: cover;
+}
+
+.diseases-list{
+    list-style: none;
+    padding-left: 0;
+
+    li{
+        position: relative;
+        &::before{
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-image: url('./../../img/check.png') 100%;
+            background-size: cover;
+            background-position: center;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
