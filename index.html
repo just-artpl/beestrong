@@ -16,18 +16,18 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">STRONA GŁÓWNA<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">BEE STRONG</a>
-                    <a class="nav-item nav-link" href="#">PIERZGA</a>
-                    <a class="nav-item nav-link" href="#">PYŁEK</a>
-                    <a class="nav-item nav-link" href="#">KONTAKT</a>
+                    <a class="nav-item nav-link px-3" href="http://beestrong.pl">STRONA GŁÓWNA</a>
+                    <a class="nav-item nav-link px-3" href="#" id="nav-beestrong">BEE STRONG</a>
+                    <a class="nav-item nav-link px-3" href="#" id="nav-pierzga">PIERZGA</a>
+                    <a class="nav-item nav-link px-3" href="#" id="nav-pylek">PYŁEK</a>
+                    <a class="nav-item nav-link px-3" href="#" id="nav-kontakt">KONTAKT</a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="carousel">
+    <div id="carousel" class="carousel">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
@@ -50,7 +50,7 @@
             <path fill="#fff" fill-opacity="1" d="m 0 0 l 0 40 h 100 v -40 l -50 30 z "></path>
         </svg>
     </div>
-    <div class="container mt-5">
+    <div id="beestrong" class="container mt-5">
         <div class="row">
             <div class="col text-center">
                 <h1 class="display-2">BEE STRONG - suplementacja batonem?</h1>
@@ -61,12 +61,12 @@
         <div class="container mt-5 py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6 text-center">
-                    <img src="img/medal.svg" class="py-5">
+                    <img src="img/medal.png" class="pb-4 w-50">
                     <h3>INNOWACYJNY I UNIKALNY</h3>
                     <p>jedyny taki produkt na rynku Polskim i Europejskim </p>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <img src="img/list.svg" class="py-5">
+                    <img src="img/list.png" class="pb-4 w-50">
                     <h3>PROSTY SKŁAD</h3>
                     <p>Batony Bee Strong mają prosty skład i zawierają:<br>
                         - pierzgę pszczelej z Miodów Bieszczadzkich<br>
@@ -75,12 +75,12 @@
                         - słonecznik ziarno zmielone</p>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <img src="img/chocolate.svg" class="py-5">
+                    <img src="img/chocolate.png" class="pb-4 w-50">
                     <h3>NATURALNA</h3>
                     <p>suplementacja batonem</p>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <img src="img/sapling.svg" class="py-5">
+                    <img src="img/sapling.png" class="pb-4 w-50">
                     <h3>BEZ ŚRODKÓW KOSERWUJĄCYCH</h3>
                     <p>całkowicie naturalny i prozdrowotny skład</p>
                 </div>
@@ -101,16 +101,19 @@
     <div class="container-fluid">
         <div class="bar-img">
             <div class="row">
-                <div class="col-md-6 p-0">
+                <div class="col-lg-6 p-0">
                     <img src="img/bar_label.jpg" class="w-100">
                 </div>
-                <div class="col-md-6 p-0">
+                <div class="col-lg-6 p-0">
                     <img src="img/bar.jpg" class="w-100">
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="right-name">
+        <img src="img/pierzga2.png" class="bulb pt-5" alt="Responsive image">
+    </div>
+    <div id="pierzga" class="container">
         <div class="row py-5">
             <div class="col">
                 <h2 class="display-3">pierzga pszczela</h2>
@@ -129,9 +132,12 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row justify-content-lg-end">
-            <div class="col-lg-5 pr-lg-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <img src="img/bars.jpg" class="w-100">
+            </div>
+            <div class="col-lg-6 p-5">
                 <p>Do jej najcenniejszych właściwości należy:</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">regeneracja organizmu po operacji,</li>
@@ -149,9 +155,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6 p-0">
-                <img src="img/bars.jpg" class="w-100">
-            </div>
         </div>
     </div>
     <div class="bg-beige">
@@ -162,13 +165,511 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <ul class="diseases-list">
-                        <li>anemia</li>
-                    </ul>
+                <div class="col-md-6 pl-md-5">
+                    <div class="list-prop">
+                        <ul class="diseases-list">
+                            <li>anemia,</li>
+                            <li>choroby jelit,</li>
+                            <li>nadciśnienie,</li>
+                            <li>choroby skóry (zwłaszcza łuszczyca),</li>
+                            <li>nowotwór,</li>
+                            <li>stan zapalny jamy ustnej, gardła i przełyku,</li>
+                            <li>dolegliwości trawienne,</li>
+                            <li>zaburzenia przemiany materii,</li>
+                            <li>choroby żołądka,</li>
+                            <li>zaparcia,</li>
+                            <li>choroby wątroby,</li>
+                            <li>choroby pęcherzyka żółciowego i trzustki,</li>
+                            <li>cukrzyca,</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="list-prop">
+                        <ul class="diseases-list">
+                            <li>dna moczanowa,</li>
+                            <li>przerost prostaty,</li>
+                            <li>choroby nerek,</li>
+                            <li>katar sienny,</li>
+                            <li>astma,</li>
+                            <li>reumatoidalne zapalenie stawów,</li>
+                            <li>depresja,</li>
+                            <li>choroby immunologiczne,</li>
+                            <li>schorzenia wieku starczego,</li>
+                            <li>problemy ze wzrokiem,</li>
+                            <li>ogólne osłabienie,</li>
+                            <li>menopauza</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <svg width="100%" height="100" viewBox="0 -60 100 100" preserveAspectRatio="none">
+            <path fill="#fff" fill-opacity="1" d="m 0 0 l 0 40 h 100 v -40 l -50 30 z "></path>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="">ponadto piegrzga:</h3>
+            </div>
+        </div>
+    </div>
+    <ul class="honeycomb">
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">01</h4>
+            <p class="text-center px-3 small-text">Chroni wątrobę, stabilizuje jej pracę i zmniejsza poziom bilirubiny. Świetnie działa w przypadku ostrego i przewlekłego zapalenia wątroby oraz uszkodzeń narządu.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">02</h4>
+            <p class="text-center px-3 small-text">Umożliwia zahamowanie procesu zapalnego, martwicy i stłuszczenie komórek.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">03</h4>
+            <p class="text-center px-3 small-text">Pobudza organizm do tworzenia hemoglobiny i czerwonych ciałek.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">04</h4>
+            <p class="text-center px-3 small-text">Ulepsza funkcjonowanie błony śluzowej żołądka, wspiera metabolizm i proces trawienia. Jednocześnie zapobiega nadwadze i niedowadze.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">05</h4>
+            <p class="text-center px-3 small-text">Zawiera antybiotyki, hamujące rozwój bakterii, który skutecznie wspomaga walkę z zakażeniami bakteryjnymi i wirusowymi.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">06</h4>
+            <p class="text-center px-3 small-text">Wzmacnia system odpornościowy. Jednocześnie zmniejsza ryzyko zachorowania z niedoboru bioelementów, skażenia powietrza, wody i pokarmu.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">07</h4>
+            <p class="text-center px-3 small-text">Może pomóc również w zaburzeniach wzrostu, dolegliwościach związanych z klimakterium, wypadaniu włosów oraz łamaniu się paznokci.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">08</h4>
+            <p class="text-center px-3 small-text">Zmniejsza stężenie cholesterolu i rozwój miażdżycy. Wspiera ośrodkowy układ nerwowy, zmniejsza napięcie nerwowe i pobudzenie. Jednocześnie poprawia samopoczucie i uspokaja.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">09</h4>
+            <p class="text-center px-3 small-text">Doceniają ją szczególnie chorzy, który cierpią na zaburzenia starcze, nerwicę lub stany wyczerpania psychicznego. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">10</h4>
+            <p class="text-center px-3 small-text">Wspomaga również działanie antydepresantów, co umożliwia zmniejszenie ich dawkowania.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">11</h4>
+            <p class="text-center px-3 small-text">Poprawia ukrwienie tkanki nerwowej, koncentrację i pamięć. Niweluje skutki procesu starzenia się organizmu i sprzyja długowieczności.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">12</h4>
+            <p class="text-center px-3 small-text">Wspiera leczenie chorób oczu, takich jak zapalenie siatkówki, rogówki i spojówek. Odpowiada także za poprawę ostrości widzenia i zmniejsza pogłębianie się wady wzroku.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">13</h4>
+            <p class="text-center px-3 small-text">Skutecznie uzupełnia niedobory składników mineralnych. Zmniejsza też intensywność dolegliwości po odstawieniu napojów wysokoprocentowych.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">14</h4>
+            <p class="text-center px-3 small-text">Jest stosowana przez niektóre osoby do leczenia cukrzycy, ponieważ pobudza wydzielanie insuliny. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">15</h4>
+            <p class="text-center px-3 small-text">Doceniają ją również osoby, narzekające na ból mięśni i kręgosłupa, chroniczne zmęczenie, dysleksję, jadłowstręt psychiczny, osłabienie popędu i niepłodność.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">16</h4>
+            <p class="text-center px-3 small-text">Jest pomocna również w przypadku łysienia, siwienia, nadczynności tarczycy, szkarlatyny, przerostu prostaty oraz zapalenia zatok.</p>
+        </li>
+        <li class="honeycomb-cell honeycomb__placeholder"></li>
+    </ul>
+
+
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <h3>Pierzga – moc cennych składników odżywczych</h3>
+                <p class="text-justify">Pierzga zawiera wiele dobroczynnych składników, które pozytywnie wpływają na stan zdrowia i samopoczucie. Jakością przewyższa tak cenne produkty, jak mięso wołowe czy wieprzowe.</p>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <h3>witaminy</h3>
+                <img src="img/honeycomb2.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <h3>mikroelementy</h3>
+                <img src="img/honeycomb3.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <h3>makroelementy</h3>
+                <img src="img/honeycomb4.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <h3>enzymy</h3>
+                <img src="img/honeycomb5.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+    <div class="right-name">
+        <img src="img/bulb.png" class="bulb pt-5" alt="Responsive image">
+    </div>
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <h2>ciekawostki</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-3">
+                <img src="img/bee1.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <p class="text-center px-3">Wykazano, że niedobór pierzgi jest odpowiedzialny za spadek odporności pszczół.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/pill.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <p class="text-center px-3">Wokół każdego ziarenka pierzgi znajduje się otoczka, która jest rozpuszczana podczas fermentacji. To dzięki temu przyswajalność witamin wzrasta kilkukrotnie.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/bee2.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <p class="text-center px-3">Ponadto, pszczoły odżywiane samym pyłkiem żyją znacznie krócej.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <h3>Zalecane spożycie</h3>
+                <p class="text-justify">Pierzga często jest stosowana w celu wzmocnienia organizmu oraz zaspokojenia zapotrzebowania na witaminy. 
+                    Najlepiej spożywać ją dwa razy dziennie - rano na czczo i wieczorem przed snem. Można zażywać ją również trzy razy dziennie, 1-2 godziny po posiłku.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-3 col-6">
+                <img src="img/child.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <h3>dzieci<br>6-12 lat</h3>
+                <h2>10-15 g</h2>
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="img/adult.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <h3>dzieci >12 lat<br>i dorośli</h3>
+                <h2>20-30 g</h2>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <h3>Pierzga a pyłek</h3>
+                <p class="text-justify">Pierzga zawiera mniej białka (ok. 12%) a tłuszczu o ok. 66%. Wzrasta natomiast ilość cukrów o 60% i innych składników o około 23%. W pierzdze występuje dużo kwasu mlekowego ok. 3,1%, oraz witaminy K. Inna jest też zawartość jakościowo-ilościowa enzymów, ponieważ wzrasta ilość enzymów pochodzenia zwierzęcego, przekazanych przez pszczołę. W pierzdze jest znacznie większa ilość peptydów oraz wolnych aminokwasów i dlatego białko pierzgi jest bardziej aktywne biologicznie i znacznie łatwiej przyswajalne. Jest to jeden z tych produktów pszczelich, którego ilość, jaką można pozyskać w pasiece może mieć poważne znaczenie dla poprawy jej ekonomiki.
+                Jednym z elementów zniechęcających pszczelarza do zwiększonego uzysku tego produktu jest pracochłonność jego prawidłowego pozyskiwania. Co prawda niektórzy proponują różne sposoby mające przyśpieszyć tę pracę przez na przykład mielenie tych części plastrów gdzie znajdują się większe ilości pierzgi jednak, jeśli ma ona być użyta jako produkt leczniczy, kosmetyczny czy odżywczy dla człowieka, wtedy konieczne jest pozyskiwanie jej ręcznie gdyż tylko taki sposób gwarantuje najwyższą czystość tego produktu. Pozyskiwanie pierzgi w dużych ilościach jest trudne ze względów technicznych.</p>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <h3>Pierzga pszczela – podsumowanie właściwości</h3>
+                <p class="text-justify">Pierzga pszczela jest dobrze znana i ma szerokie zastosowanie w apiterapii, czyli dziedzinie medycyny naturalnej badającej wpływ wyrobów pszczelich na organizm ludzki.  
+                Pomaga w wielu problemach zdrowotnych:</p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="honeycomb">
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">01</h4>
+                <p class="text-center px-3 small-text">Wpływa na zwiększenie zwiększenie odporności organizmu.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">02</h4>
+                <p class="text-center px-3 small-text">Ułatwia regenerację organizmu po operacjach i przebytych zawałach.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">03</h4>
+                <p class="text-center px-3 small-text">Wzmacnia układ nerwowy, a tym samym znajduje zastosowanie w leczeniu depresji.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">04</h4>
+                <p class="text-center px-3 small-text">Korzystnie wpływa również na układ pokarmowy  – szczególnie przy wrzodach.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">05</h4>
+                <p class="text-center px-3 small-text">Zawiera antybiotyki, hamujące rozwój bakterii, który skutecznie wspomaga walkę z zakażeniami bakteryjnymi i wirusowymi.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">06</h4>
+                <p class="text-center px-3 small-text">Wzmaga apetyt.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">07</h4>
+                <p class="text-center px-3 small-text">Reguluje przemianę materii.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">08</h4>
+                <p class="text-center px-3 small-text">Zwiększa liczbę czerwonych ciałek we krwi i poziom żelaza (a więc zapobiega wystąpieniu anemii).</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">09</h4>
+                <p class="text-center px-3 small-text">Jest znana z tego, że wzmacnia organizm, dostarcza mu potrzebnych aminokwasów i witamin. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">10</h4>
+                <p class="text-center px-3 small-text">Wspomaga leczenie farmaceutykami – np. w: chorobie wrzodowej żołądka, schorzeniach gruczołu krokowego (prostaty) oraz  leczeniu stanów przedzawałowych, choroby alkoholowej, kataru siennego, astmy itp.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">11</h4>
+                <p class="text-center px-3 small-text">Jest stosowana w stanach zapalnych jamy ustnej i w okresach silnego narażenia organizmu na bakterie i grzyby.</p>
+        </li>
+        <li class="honeycomb-cell honeycomb__placeholder"></li>
+    </ul>
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <p class="text-right small-text">Na podstawie:<br>
+                    Kijak M.: Produkty pszczele i ich zastosowanie w medycynie i profilaktyce,<br>
+                    Kałużny E.: Pszczela apteczka. Apiherba, Leszno 1992,<br>
+                    Kędzia B., Hołderna-Kędzia E.: Leczenie produktami pszczelimi, Warszawa 1994,<br>
+                    Kędzia B., Hołderna-Kędzia E.: Naturalne leki z ula, Warszawa 1991<br>
+                    Michalik B.: Witamina K, Żyjmy dłużej, 7/1998<br>
+                    Zamecki S., Noszczyk M., Eris I.: Ocena kliniczna miejscowego stosowania witaminy K w przypadkach wylewów podskórnych, Borgis - Medycyna Rodzinna 3-4/2000, s. 11-12<br>
+                    Kaniowska E., Szybejko-Machaj G., Alfa-hydroksykwasy - właściwości i zastosowanie, Polish J Cosmet, 1998/2<br>
+                    http://www.apiterapia.biz<br>
+                    http://apiterapia.rostowski.info<br>
+                    http:// pasieka-urbaniak.pl<br>
+                    http://biochemiaurody.com</p>
+            </div>
+        </div>
+    </div>
+    <div id="pylek" class="container-fluid">
+        <div class="row">
+            <div class="col p-0">
+                <img src="img/reklama.jpg" class="w-100">
+            </div>
+        </div>
+    </div>
+    <div class="right-name">
+        <img src="img/pylek.png" class="bulb pt-5" alt="Responsive image">
+    </div>
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <h2 class="display-3">pyłek pszczeli</h2>
+                <p class="text-justify">Pyłek pszczeli  cechuje wiele cennych dla organizmu właściwości. Ze względu na dużą zawartość białka, spożywanie pyłku kwiatowego polecane jest w niedoborach białka czy dla sportowców. Co ciekawe zidentyfikowano w nim aż 250 różnych związków - stanowi bogate źródło witamin – przede wszystkim witaminy E, witamin z grupy B, witaminy C i beta-karotenu. Znajdziemy w nim także bardzo dużo minerałów, zwłaszcza fosforu i potasu, ale i wapnia, magnezu, sodu, żelaza, manganu, cynku i miedzi. 
+                </p>
+                <h3>Pyłek kwiatowy – co to jest? </h3>
+                <p class="text-justify">Pyłek kwiatowy (pyłek pszczeli) to pyłek, który został zebrany przez pszczoły, ale nie został całkowicie przetworzony przez pożyteczne owady. Pyłek kwiatowy zbierany jest przez pszczoły w celu nakarmienia młodych owadów i trafia do ula pod postacią maleńkich kuleczek. Jedna taka kuleczka to ponad 100 tysięcy mikro ziaren pyłków różnych kwiatów – w zależności od tego, na jakich terenach latają pszczoły. Pozyskiwanie pyłku kwiatowego możliwe jest poprzez instalację u wlotu ula zabezpieczenia, które pozwala odebrać pszczołom część zebranego pyłku. 
+                </p>
+                <h3>Cenny skład pyłku  pszczelego</h3>
+                <p class="text-justify">Nieocenione wartości odżywcze pyłku pszczelego wynikają z bardzo bogatego składu chemicznego, gdyż zidentyfikowano w nim ponad 250 różnych związków. Znajdują się w nim cukry proste (fruktoza, glukoza), kwasy tłuszczowe, ponad 30 aminokwasów (ich zawartość w pyłku sięga nawet 12%!) oraz składniki mineralne, takie jak potas, fosfor, wapń, magnez, sód, żelazo i cyn. Pyłek kwiatowy jest też źródłem wielu witamin. Wśród nich najważniejszymi są: A, B1, B2, B3, E, C, PP i D.
+                </p>
+                <h3>Wartości zdrowotne pyłku pszczelego</h3>
+                <p class="text-justify">Badania przeprowadzone nad pszczelim pyłkiem kwiatowym potwierdziły jego korzystny wpływ na zdrowie człowieka. Stanowi on bardzo cenną odżywkę dla organizmu człowieka. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <ul class="honeycomb">
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">01</h4>
+            <p class="text-center px-3 small-text">Wzmacnia apetyt i reguluje przemianę materii - skutki są widoczne już po kilku dniach przyjmowania- przyczynia się do spadku wagi u osób otyłych.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">02</h4>
+            <p class="text-center px-3 small-text">Wzmacnia organizm i działa przeciwko anemii.</p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">03</h4>
+            <p class="text-center px-3 small-text">Ma właściwości detoksykacyjne (odtruwające). Zmniejsza lub całkowicie eliminuje szkodliwe oddziaływanie wielu czynników chemicznych na organizm człowieka. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <p class="text-center p-3 small-text">Szczególnie ma to duży wpływ na działanie i stan wątroby. Pyłek ochrania wątrobę przed zatruciem substancjami toksycznymi, ułatwia jej odnawianie, a także wspomaga leczenie choroby alkoholowej. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">04</h4>
+            <p class="text-center px-3 small-text">Wykazuje właściwości antydepresyjne, antyalergiczne i antybiotyczne. Przede wszystkim zmniejsza nerwowość i rozdrażnienie, wspomaga leczenie depresji i zwiększa koncentrację. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">05</h4>
+            <p class="text-center px-3 small-text">Pyłek pszczeli wspólnie z miodem może służyć do leczenia chorób alergicznych, ponieważ skutecznie leczy katar sienny, astmę lub znacznie łagodzi ich objawy. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">06</h4>
+            <p class="text-center px-3 small-text">Wyciąg z pyłku kwiatowego ma silne działanie przeciwbakteryjne. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">07</h4>
+            <p class="text-center px-3 small-text">Cechuje go działanie przeciwmiażdżycowe. Wspomaga on leczenie nadciśnienia, stanów pozawałowych i obniża poziom cholesterolu. 
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">08</h4>
+            <p class="text-center px-3 small-text">Jest stosowany przy leczeniu silnych zaparć i choroby wrzodowej żołądka, ponieważ działa korzystnie na florę bakteryjną przewodu pokarmowego. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">09</h4>
+            <p class="text-center px-3 small-text">Co ciekawe, pyłek ma właściwości poprawiające wzrok. To za sprawą dużej zawartości witaminy B2 i innych bioelementów.  </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">10</h4>
+            <p class="text-center px-3 small-text">Wyciągi z pyłku zwiększają wydzielanie insuliny, a to oznacza, że spożywany przez chorych na cukrzycę pomaga obniżyć poziom cukru we krwi. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">11</h4>
+            <p class="text-center px-3 small-text">Polecany jest także w stanach zapalnych gardła, zwłaszcza w połączeniu z propolisem. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">12</h4>
+            <p class="text-center px-3 small-text">Profilaktyczne przyjmowanie pyłku zapobiega występowaniu przeziębienia i grypy, a w przypadku zachorowania, skraca czas leczenia i łagodzi przebieg infekcji. </p>
+        </li>
+        <li class="honeycomb-cell">
+            <h4 class="display-4 text-center">13</h4>
+            <p class="text-center px-3 small-text">Pyłek wpływa na cofanie się zmian zapalnych i przerostowych w gruczole krokowym. Warto wiedzieć, że pyłek wykazuje działanie zapobiegające poronieniom. Przyczynia się również do podniesienia płodności.</p>
+        </li>
+        <li class="honeycomb-cell honeycomb__placeholder"></li>
+    </ul>
+
+
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <h3>Przeciwwskazania do stosowania pyłku kwiatowego</h3>
+                <p class="text-justify">U osób, które są uczulone na pyłki roślinne, po jego spożyciu mogą wystąpić reakcje alergiczne. Może być to zaczerwienienie spojówek, pokrzywki, zaburzenia układu pokarmowego takie jak wzdęcia, bóle brzucha, nudności, zgaga oraz obrzęki.
+                </p>
+                <h3>Dawkowanie - kuracja pyłkiem pszczelim
+                </h3>
+                <p class="text-justify">Zgodnie z zasadami pyłek pszczeli powinno się przyjmować 3 razy w ciągu dnia, od 30 minut do 2 godzin przed posiłkiem. Dodatkowo, aby kuracja przyniosła prawidłowe efekty, musi ona trwać od 1 do 3 miesięcy i być powtarzana nawet kilka razy w ciągu roku. Należy pamiętać, aby po każdym zakończonym cyklu leczniczym stosować przerwę. Najlepszy moment na rozpoczęcie kuracji to jesień i wiosna. Jesienią uodparnia ona organizm przed zimowymi przeziębieniami, a wiosną działa wzmacniająco oraz uzupełnia niedobory witamin i mikroelementów.
+
+                    Dawkowanie dzienne wg zaleceń: </p>
+
+            </div>
+        </div>
+        <div class="row justify-content-center text-center pb-5">
+            <div class="col-md-3 col-6">
+                <img src="img/child2.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <h3>dzieci<br>3-5 lat</h3>
+                <h2>10 g</h2>
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="img/child.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <h3>dzieci<br>6-12 lat</h3>
+                <h2>15 g</h2>
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="img/adult.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <h3>dzieci >12 lat<br>i dorośli</h3>
+                <h2>20 g</h2>
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="img/adult2.png" class="img-fluid w-75 p-3" alt="Responsive image">
+                <h3>dorośli<br>podczas leczenia</h3>
+                <h2>30-40 g</h2>
+            </div>
+        </div>
+    </div>
+    <div class="bg-beige">
+        <div class="container">
+            <div class="row pt-5 justify-content-center">
+                <div class="col text-center">
+                    <img src="img/miarka.png" class="img-fluid pb-5" alt="Responsive image">
+                    <h3>Pamiętajmy, że jedna łyżeczka zawiera ok </h3>
+                    <h2 class="display-3">5 g</h2>
+                    <h3>pyłku pszczelego</h3>
+                </div>
+            </div>
+        </div>
+        <svg width="100%" height="100" viewBox="0 -60 100 100" preserveAspectRatio="none">
+            <path fill="#fff" fill-opacity="1" d="m 0 0 l 0 40 h 100 v -40 l -50 30 z "></path>
+        </svg>
+    </div>
+    <div class="right-name">
+        <img src="img/bulb.png" class="bulb pt-5" alt="Responsive image">
+    </div>
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <h2>ciekawostki</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center pb-5">
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="img/icon1.png" class="img-fluid p-3" alt="Responsive image">
+                <p class="text-center py-3 small-text">Wśród najcenniejszych składników pyłku kwiatowego znajdziemy białko, które stanowi od 13 do 40 procent pyłku. Istotnymi składnikami pyłku kwiatowego są także fitohormony i enzymy, które wspomagają prawidłowy metabolizm naszego organizmu.</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="img/icon2.png" class="img-fluid p-3" alt="Responsive image">
+                <p class="text-center py-3 small-text">Regularne stosowanie pyłku kwiatowego jako składnika napojów (do osłodzonej miodem kawy lub herbaty należy dodać łyżeczkę pyłku kwiatowego) znacznie hamuje łaknienie.
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="img/icon3.png" class="img-fluid p-3" alt="Responsive image">
+                <p class="text-center py-3 small-text">Spożywanie pyłku kwiatowego pozwala wspomóc odporność organizmu, a zawarte w nim mikro i makroelementy mogą być pomocne w leczeniu anemii oraz złej kondycji organizmu wywołanej innymi chorobami lub lekami.</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="img/icon4.png" class="img-fluid p-3" alt="Responsive image">
+                <p class="text-center py-3 small-text">Pyłek kwiatowy powinien stanowić element diety osób zmagających się z ciężkimi, przewlekłymi chorobami jak nowotwory czy choroby nerek i wątroby.
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="img/icon5.png" class="img-fluid p-3" alt="Responsive image">
+                <p class="text-center py-3 small-text">Spożycie pyłku kwiatowego to zastrzyk energii i sposób na koncentrację, dlatego warto zaopatrzyć się w pyłek kwiatowy do pracy czy na studia.</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="img/icon6.png" class="img-fluid p-3" alt="Responsive image">
+                <p class="text-center py-3 small-text">Pyłek kwiatowy odtruwa organizm – będzie dobrym uzupełnieniem diety osób, które właśnie rzuciły palenie lub walczą z nałogiem. Ponadto, ostatnie badania wskazują, że pyłek kwiatowy może zniszczyć gronkowca złocistego lub ogniska grzybicy.</p>
+            </div>
+        </div>
+    </div>
+    <div class="right-name">
+        <img src="img/kontakt.png" class="bulb pt-5" alt="Responsive image">
+    </div>
+    <div id="kontakt" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 p-0">
+                <img src="img/carousel2.jpg" class="contact-img" alt="Responsive image">
+            </div>
+            <div class="col-md-4 p-md-5 py-5">
+                <h2 class="display-4">masz pytanie?<br>napisz do nas!</h2>
+                <form>
+                    <div class="form contact-form">
+                        <span><input type="text" name="your-name" value="" size="40" class="bg-gray" aria-required="true" aria-invalid="false" placeholder="imię i nazwisko..." /></span><br />
+                        <span><input type="email" name="your-email" value="" size="40" class="bg-gray" aria-required="true" aria-invalid="false" placeholder="e-mail..." /></span><br />
+                        <span><textarea name="your-message" cols="40" rows="5" class="bg-gray" aria-invalid="false" placeholder="wiadomość..."></textarea></span></p>
+                        <input type="submit" value="Wyślij" class="contact-form-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray py-5">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-md-left text-center py-md-0 py-2">
+                        <img src="img/logo-white.png" class="img-fluid w-50" alt="Responsive image">
+                    </div>
+                    <div class="col-md-4 text-md-left text-center  py-md-0 py-5">
+                        <ul class="phone">
+                            <li>Sprzedaż i marketing<br>697 151 330</li>
+                            <li>Dystrybucja<br>607 105 211</li>
+                        </ul>
+                        <ul class="envelope">
+                            <li>kontakt@instytutnowychidei.pl</li>
+                            <li>kontakt@beestrong.pl</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-md-right text-center  py-md-0 py-2">
+                        <ul class="address">
+                            <li>Instytut Nowych Idei</li>
+                            <li>ul. Dworcowa 11</li>
+                            <li>64-330 Wojnowice</li>
+                            <li class="pt-5">www.miodybieszczadzkie.pl</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
